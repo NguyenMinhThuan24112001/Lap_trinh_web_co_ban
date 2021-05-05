@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+#main {
+
+}
+
+#header {
+    background-color: black;
+    height: 46px;
+}
+#nav li{
+    display: inline-block;
+}
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: inline-block;
+
+}
+#nav li:hover a {
+    color: black !important;
+    background-color: #ccc !important;
+}
+#nav .subnav{
+    display: none;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+ 
+}
