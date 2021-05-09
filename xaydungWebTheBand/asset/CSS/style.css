@@ -13,21 +13,18 @@ html{
     background-color: black;
     height: 46px;
 }
-#nav, .subnav{
-    list-style-type: none;
-}
 #nav > li{
     display: inline-block;
 }
 #nav li{
     position: relative;
 }
-#nav > li >a {
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li > a{
     color: white;
     text-transform: uppercase;
-}
-#nav li:hover .subnav{
-    display: block;
 }
 #nav li a{
     text-decoration: none;
@@ -37,17 +34,20 @@ html{
 }
 #nav > li:hover > a,
 #nav .subnav li:hover{
-    background-color: #ccc;
+    background-color:#ccc;
     color: black;
 }
-#nav .subnav{
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav {
     display: none;
     position:absolute;
     top: 100%;
     left: 0;
     background-color: white;
     min-width: 160px;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
 }
 #nav .subnav a{
     padding: 0px 12px;
