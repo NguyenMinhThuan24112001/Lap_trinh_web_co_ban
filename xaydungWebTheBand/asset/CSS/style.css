@@ -10,11 +10,15 @@ html{
 
 }
 #header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: black;
-    height: 46px;
+    height: 46.4px;
 }
-#nav, .subnav{
-    list-style-type: none;
+#nav{
+    display: inline-block;
 }
 #nav > li{
     display: inline-block;
@@ -22,13 +26,16 @@ html{
 #nav li {
     position: relative;
 }
-#nav >li>a{
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav > li > a{
     color: white;
     text-transform: uppercase;
 }
-#nav li a{
+#nav li a{  
     text-decoration: none;
-    line-height:46px;
+    line-height: 46.4px;
     padding: 0px 24px;
     display: block;
 }
@@ -37,9 +44,9 @@ html{
     background-color: #ccc;
     color: black;
 }
-#nav .subnav {
+#nav .subnav{
     display: none;
-    position:absolute;
+    position: absolute;
     top: 100%;
     left: 0px;
     background-color: white;
@@ -50,15 +57,27 @@ html{
     display: block;
 }
 #nav .subnav a{
-    color: black;
-    padding: 0px 12px;
+    color: black ;
     line-height: 38px;
+    padding: 0 12px;
+}
+#header .search-btn{
+    float: right;
+}
+#header .search-icon{
+    color: white;
+    line-height: 46.4px;
+    padding:0px 23px;
+}
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
 }
 #slider{
-    
+    margin-top: 46.4px;
 }
 #content{
-
+   
 }
 #footer{
 
