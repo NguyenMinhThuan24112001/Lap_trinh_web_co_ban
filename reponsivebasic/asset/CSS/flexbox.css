@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+}
+body{
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    height: 130vh;
+    width: 100%;
+    justify-content: center;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.c-flex{
+    display: flex;
+    width: 96%;
+    height: 130vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.h-flex{
+    display: flex;
+    width: 100%;
+}
+.col-1{
+    flex:1;
+}
+.col-2,.col-4{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row1{
+    align-self:center;
+}
+.col-3{
+    flex: 3;
+    font-size: 20px;
+    text-align: center;
+}
+.ro1{
+    flex-basis: 5%;
+}
+.ro2,.ro3{
+    flex-basis: 43%;
+    display: flex;
+    flex-direction: column;
+}
+.ro2{
+    display: flex;
+    flex-direction: column;
+}
+.row2-1{
+    flex-basis:15%;
+}
+.row2-2{
+    flex-basis:85%;
+    display: flex;
+    justify-content: space-between;
+}
+.coln1{
+    flex-basis: 18%;
+    display: flex;
+}
+.coln1 > p{
+    margin: auto;
+}
+.coln2{
+    flex-basis: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.layout-items{
+    background-color:#ced0dc ;
+    border: 1px solid #5e5e61 ;
+    border-radius: 3px;
+    display: flex;
+    align-self: flex-end;
+}
+.items{
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-self: flex-end;
+}
+.items-i{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row3-1{
+    flex-basis: 15%;
+}
+.row3-2{
+    flex-basis: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.row3-2-1{
+    flex-basis: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.row3-2-2{
+    flex-basis: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row3col{
+    display: flex;
+    width: 30%;
+    justify-content:space-between;
+}
+.abc{
+    width: 7%;
+    justify-content:flex-end;
+}
+button{
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+}
+.nut button{
+    border-radius: 20px;
+}
+.mui button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.nut{
+    flex-basis: 30%;
+}
+.mui{
+    flex-basis: 45%;
+}
+.layout-items2{
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+.cont2{
+    height: 97%;
+    width: 100%;
+    background-color: white;
+    align-self: center;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cont{
+    width: 92%;
+    background-color: #ced0dc;
+    border-radius: 10px;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.costar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.k12{
+    flex-basis: 10%;
+}
+.ahi{
+    align-self: center;
+}
+.stars{
+    flex-basis: 40%;
+}
+.stars1{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ahi button{
+    background-color: #ced0dc;
+    border: none;
+}
+.hihi{
+    flex-basis: 30%;
+}
+.ph1{
+    display: flex;
+    flex-direction:column ;
+    flex-basis: 20%;
+    justify-content: space-evenly;
+}
+.aka button{
+    height: 15px;
+    background-color: white;
+    border: none;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot2{
+    display: flex;
+    flex-basis: 40%;
+    border-right: 1px solid black;
+}
+.foot1,.foot3{
+    flex-basis: 30%;
+    display: flex;
+}
+.foot1, .foot2,.foot3{
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 575px) {
+    .costar h1{
+        font-size: 12px;
+    }
+    .costar p, .ahi p{
+        font-size: 7px;
+    }
+    .stars>i{
+        font-size: 8px;
+     }
+    .ahi button{
+        height: 12px;
+    }
+    .hihi p{
+        font-size: 5px;
+    }
+    .row3-1>p{
+        font-size: 25px;
+        padding: 30px;
+    }
+    .layout-items2{
+        flex-basis: 32%;
+        height: 60%;
+    }
+
+    .cont2{
+        height: 95%;
+        width: 70%;
+    }
+
+    .layout-items2{
+        align-self: center;
+        justify-content: center;
+        flex-basis: 100%;
+    }.row2-2{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .layout-items{
+        flex-basis: 75%;
+        height: 100px;
+    }
+    .coln2{
+        justify-content: center;
+    }
+    .coln1 p{
+        padding: 28px;
+    }
+    .ro1 span{
+        font-size: 10px;
+    }
+    .col-2,.col-4{
+        flex-direction: row;
+    }
+    .col-4 span{
+        font-size: 15px;
+    }
+    .row2-1 p{
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    .col-1,.col-3,.col-2 i,.col-2{
+        display: none;
+    }
+}
+@media (min-width: 576px) {
+
+    .col-1,.col-3,.row1 i{
+        display: inline-block
+    }
+    .col-2{
+        display: flex;
+    }
+    .costar h1{
+        font-size: 12px;
+    }
+    .costar p, .ahi p{
+        font-size: 10px;
+    }
+    .ahi button{
+        height: 12px;
+    }
+    .ro1 span{
+        font-size: 13px;
+    }
+    .hihi p{
+        font-size: 5px;
+    }
+    .stars>i{
+        font-size: 8px;
+    }
+    .layout-items2{
+        flex-basis: 32%;
+        height: 65%;
+    }
+    .layout-items{
+        height: 100px;
+        flex-basis: 30%;
+    }
+    .nut p{
+        font-size: 10px;
+    }
+    .row2-2{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .aa1{
+        display: none;
+    }
+    .row2-1{
+        flex-basis: 5%;
+    }.ro2{
+        justify-content: space-between;
+    }
+
+    .ro1{
+        flex-basis: 8%;
+    }
+    .row3-1 p{
+        font-size: 30px;
+        padding: 0;
+    }
+    .cont2{
+        height: 97%;
+        width: 100%;
+    }
+    .coln2{
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .coln1 p{
+        padding: 0px;
+    }
+    .col-2,.col-4{
+        flex-direction: column;
+    }
+    .col-4{
+        font-size: 10px;
+    }
+    .row2-1 p{
+        padding: 0px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .aa1{
+        display: none;
+    }
+    .layout-items{
+        height: 158px;
+        flex-basis: 32%;
+    }
+    .layout-items2{
+        flex-basis: 32%;
+        height: 100%;
+    }
+    .costar h1{
+        font-size: 16px;
+    }
+    .costar p, .ahi p{
+        font-size: 13px;
+    }
+    .stars>i{
+        font-size: 10px;
+    }
+    .ahi button{
+        height: 20px;
+    }
+    .hihi p{
+        font-size: 10px;
+    }
+    .row2-2{
+        flex-direction: row ;
+    }
+    .ro2,.ro3{
+        flex-basis: 44%;
+    }
+    .ro1{
+        flex-basis: 5%;
+    }
+    .row1 i{
+        display: none;
+    }
+    .row3-1 {
+        flex-basis: 10%;
+    }
+    .row3-2-1{
+        flex-basis: 11%;
+    }
+    .row2-1{
+        flex-basis: 10%;
+    }
+    .nut p{
+        font-size: 12px;
+    }
+
+    .row2-2{
+        flex-direction: row;
+        flex-basis: 85%;
+    }
+    .col-2,.col-4{
+        flex-direction: row;
+    }
+    .row3-1 p{
+        font-size: 30px;
+        padding: 0px;
+    }
+    .cont2{
+        height: 97%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .aa1{
+        display: none;
+    }
+    .layout-items{
+        height: 208px;
+        flex-basis: 32%;
+    }
+    .layout-items2{
+        flex-basis: 32%;
+        height: 100%;
+    }
+    .costar h1{
+        font-size: 16px;
+    }
+    .costar p, .ahi p{
+        font-size: 13px;
+    }
+    .stars>i{
+        font-size: 10px;
+    }
+    .ahi button{
+        height: 20px;
+    }
+    .hihi p{
+        font-size: 10px;
+    }
+    .ro2,.ro3{
+        flex-basis: 43%;
+    }
+    .row3-1 {
+        flex-basis: 10%;
+    }
+    .row3-2-1{
+        flex-basis: 11%;
+    }
+    .row2-1{
+        flex-basis: 10%;
+    }
+    .ro1 span{
+        font-size: 15px;
+    }
+    .ro1{
+        flex-basis: 3%;
+    }
+    .row1 i{
+        display:inline-block;
+    }
+    .nut p{
+        font-size: 15px;
+    }
+    
+    .row2-2{
+        flex-direction: row;
+        flex-basis: 85%;
+    }
+    .col-2,.col-4{
+        flex-direction: row;
+    }
+    .row3-1 p{
+        font-size: 30px;
+    }
+    .cont2{
+        height: 97%;
+        width: 100%;
+    }
+    .col-4 i{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .aa1{
+        display: flex;
+    }
+    .layout-items{
+        flex-basis: 19%;
+        height: 166px;
+    }
+    .layout-items2{
+        flex-basis: 15%;
+        height: 100%;
+    }
+    .costar h1{
+        font-size: 12px;
+    }
+    .costar p, .ahi p{
+        font-size: 10px;
+    }
+    .stars>i{
+        font-size: 8px;
+     }
+    .ahi button{
+        height: 12px;
+    }
+    .hihi p{
+        font-size: 5px;
+    }
+    .row2-2{
+        flex-direction: row ;
+    }
+    .ro2,.ro3{
+        flex-basis: 43%;
+    }
+    .row3-1 {
+        flex-basis: 15%;
+    }
+    .row3-2-1{
+        flex-basis: 15%;
+    }
+    .row2-1{
+        flex-basis: 15%;
+    }
+    .ro1 span{
+        font-size: 15px;
+    }
+    .ro1{
+        flex-basis: 3%;
+    }
+    .nut p{
+        font-size: 15px;
+    }
+    
+    .row2-2{
+        flex-direction: row;
+        flex-basis: 85%;
+    }
+    .col-2,.col-4{
+        flex-direction: row;
+    }
+    .row3-1 p{
+        font-size: 30px;
+    }
+    .cont2{
+        height: 97%;
+        width: 100%;
+    }
+}
